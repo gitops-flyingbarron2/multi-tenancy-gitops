@@ -156,7 +156,7 @@ spec:
                 enabled: true
                 poll_rate: 5
                 queueManagers:
-                    COM-INSTANA-QM01:    # Your Queue Manager name here
+                    QM01:    # Your Queue Manager name here
                         #channel: 'SYSTEM.ADMIN.SVRCONN' # Server connection channel
                         channel: 'IBM.DEMO.Q'
                         queuesRegex: '.*' # Optional regex for filtering queues
