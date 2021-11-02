@@ -162,7 +162,7 @@ spec:
 
           cluster:
             # cluster.name represents the name that will be assigned to this cluster in Instana
-            name: cluster-name
+            name: GitOps-Cluster 
 
           leaderElector:
             image:
@@ -211,7 +211,7 @@ spec:
 
           zone:
             # zone.name is the custom zone that detected technologies will be assigned to
-            name: zone-name
+            name: ROKS-GitOps 
 
           kubernetes:
             # Configures use of a Deployment for the Kubernetes sensor rather than as a potential member of the DaemonSet
