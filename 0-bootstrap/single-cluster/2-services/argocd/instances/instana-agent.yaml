@@ -152,6 +152,16 @@ spec:
 
               org.ops4j.pax.logging.cfg: 
                 log4j2.logger.instana.level: 'DEBUG'
+              com.instana.plugin.ibmmq:
+                enabled: true
+                poll_rate: 5
+                queueManagers:
+                    COM-INSTANA-QM01:    # Your Queue Manager name here
+                        #channel: 'SYSTEM.ADMIN.SVRCONN' # Server connection channel
+                        channel: 'IBM.DEMO.Q'
+                        queuesRegex: '.*' # Optional regex for filtering queues
+                        availabilityZone: 'IBM MQ Custom Zone' # Optional, cluster name will be used by default 
+                        poll_rate: 5 # Metrics poll rate in seconds (optional)
 
             # agent.redactKubernetesSecrets sets the INSTANA_KUBERNETES_REDACT_SECRETS environment variable.
             # redactKubernetesSecrets: null
