@@ -157,8 +157,8 @@ spec:
                 poll_rate: 5
                 queueManagers:
                     QM1:    # Your Queue Manager name here
-                        #channel: 'SYSTEM.ADMIN.SVRCONN' # Server connection channel
-                        channel: 'IBM.DEMO.Q'
+                        channel: 'SYSTEM.ADMIN.SVRCONN' # Server connection channel
+                        #channel: 'IBM.DEMO.Q'
                         queuesRegex: '.*' # Optional regex for filtering queues
                         availabilityZone: 'IBM MQ Custom Zone' # Optional, cluster name will be used by default 
                         poll_rate: 5 # Metrics poll rate in seconds (optional)
